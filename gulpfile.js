@@ -252,33 +252,33 @@ function otf2ttf() {
 }
 
 
-//function svgSprites() {
-//	return gulp.src([source_folder + '/iconsprite/*.svg'])
-//		.pipe(svgSprite({
-//			shape: {
-//				id: {
-//					whitespace: '_'
-//				}
-//			},
-//			mode: {
-//				css: {
-//					bust: false,
-//					dimensions: '%s',
-//					sprite: "../img/icons/icon_svg", // Sprite path and name
-//					prefix: ".svg_%s",
-//					render: {
-//						css: {
-//							dest: 'style_icons',
-//							css: true // Activate CSS output (with default options)
-//						}
-//					}
-//				}
-//			}
-//		}
-//		))
-//		.pipe(dest(project_folder))
-//}
-//
+// function svgSprites() {
+// 	return gulp.src([source_folder + '/iconsprite/*.svg'])
+// 		.pipe(svgSprite({
+// 			shape: {
+// 				id: {
+// 					whitespace: '_'
+// 				}
+// 			},
+// 			mode: {
+// 				css: {
+// 					bust: false,
+// 					dimensions: '%s',
+// 					sprite: "../img/icons/icon_svg", // Sprite path and name
+// 					prefix: ".svg_%s",
+// 					render: {
+// 						css: {
+// 							dest: 'style_icons',
+// 							css: true // Activate CSS output (with default options)
+// 						}
+// 					}
+// 				}
+// 			}
+// 		}
+// 		))
+// 		.pipe(dest(project_folder))
+// }
+
 
 function svgSpriteBuild() {
 	return gulp.src([source_folder + '/img/iconsprite/notedits/*.svg'])
