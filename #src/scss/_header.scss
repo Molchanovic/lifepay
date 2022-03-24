@@ -1,0 +1,255 @@
+.header {
+    background: #000;
+    z-index: 2000;
+
+    &__blocks {
+        position: relative;
+    
+
+        @media (max-width: $mxxl){
+           display: flex;
+        }
+        
+        @media (max-width: $mmd){
+            justify-content: space-between;
+            align-items:center;
+            flex-wrap: wrap;
+        }
+    }
+
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &_top {
+            padding: 30px 0px 25px 0px;
+            border-bottom: 1px solid #fff;
+
+            @media (max-width: $mxxl){
+                padding: 20px 0px 15px 0px;
+            }
+        }
+
+        &_down {
+            padding: 25px 0px;
+
+            @media (max-width: $mxxl){
+                padding: 20px 0px;
+            }
+        }
+
+        
+    }
+
+    &__list-down,
+    &__list-top {
+        display: flex;
+        color: #fff;
+    }
+
+    &__list-top {
+    }
+
+    &__li {
+        $fs: 12;
+        font-size: calc($fs / $f-size) + em;
+        line-height: calc(15 / $fs * 100%);
+        margin-right: 30px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+
+        @media (max-width: $mlg){
+            margin-right: 15px;
+        }
+    }
+
+    &__entrance {
+        color: #fff;
+        position: relative;
+
+        svg {
+            width: 22px;
+            height: 22px;
+            fill: #fff;
+            position: absolute;
+            top: 0px;
+            left: 0;
+
+            @media (max-width: $mlg){
+                position: static;
+                top: 0;
+                left: 0;
+            }
+        }
+
+        span {
+            padding-left: 40px;
+            $fs: 12;
+            font-size: calc($fs / $f-size) + em;
+            line-height: calc(15 / $fs * 100%);
+
+            @media (max-width: $mlg){
+                display: none;
+            }
+        }
+    }
+
+    &__list-down {
+    }
+
+    &__li-big {
+        $fs: 20;
+        font-size: calc($fs / $f-size) + em;
+        line-height: calc(25 / $fs * 100%);
+        margin-right: 50px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        @media (max-width: $mxxl){
+            $fs: 16;
+            font-size: calc($fs / $f-size) + em;
+            line-height: calc(20 / $fs * 100%);
+            margin-right: 30px;
+        }
+
+        @media (max-width: $mlg){
+            $fs: 12;
+            font-size: calc($fs / $f-size) + em;
+            line-height: calc(16 / $fs * 100%);
+            margin-right: 20px;
+        }
+    }
+
+    &__logo {
+        max-width: 162px;
+        position: absolute;
+        top: 0;
+        left: -20%;
+
+        img {
+            width: 100%;
+            object-fit: cover;
+        }
+
+        @media (max-width: $mxxl){
+            position:static;
+            max-width: 120px;
+        }
+
+        @media (max-width: $mmd){
+            max-width: 90px;
+        }
+
+    }
+
+    &__wrapper {
+        width: 100%;
+        margin-left: 40px;
+        
+
+        @media (max-width: $mmd){
+            display: none;
+            margin-left: 0;
+            margin-top: 40px;
+        }
+    }
+
+    &_active {
+        background: $color-dark-blue;
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+
+        .header__wrapper {
+            display: block;
+            $grid: 100;
+            flex: 0 0 0% + $grid;
+            max-width: 0% + $grid;
+        }
+
+        .header__row {
+            padding: 0;
+            border-bottom: none;
+            
+
+            ul {
+                display: block;
+                text-align: center;
+                $grid: 100;
+                flex: 0 0 0% + $grid;
+                max-width: 0% + $grid;
+                li {
+                    margin-right: 0;
+                    $fs: 20;
+                    font-size: calc($fs / $f-size) + em;
+                    line-height: calc(25 / $fs * 100%);
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+
+    &__icons-mob {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.menu-burger {
+    width: 24px;
+    height: 14px;
+    position: relative;
+    margin-bottom: 5px;
+
+    @media (max-width: $mmd){
+        margin-left: 30px;
+    }
+    span {
+        display: block;
+        background: #fff;
+        position: absolute;
+        width: 24px;
+        height: 2px;
+        left: 0;
+        transition: .3s;
+
+        &:nth-child(1) {
+            top: 0;
+        }
+
+        &:nth-child(2) {
+            top: 6px;
+        }
+
+        &:nth-child(3) {
+            top: 12px;
+        }
+    }
+
+    &_active {
+        margin-bottom: 0px;
+        span {
+            &:nth-child(1) {
+                top: 3px;
+                transform: rotate(-45deg);
+            }
+    
+            &:nth-child(2) {
+                display: none;
+            }
+    
+            &:nth-child(3) {
+                top: 3px;
+                transform: rotate(45deg);
+            }
+        }
+    }
+}
