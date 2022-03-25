@@ -4,6 +4,7 @@
     top: 0;
     left: 0;
     right: 0;
+    transition: .3s;
 
 
     &__blocks {
@@ -132,6 +133,7 @@
 
     &__logo {
         max-width: 162px;
+        max-height: 162px;
         position: absolute;
         top: 0;
         left: -20%;
@@ -144,10 +146,12 @@
         @media (max-width: $mxxl){
             position:static;
             max-width: 120px;
+            max-height: 120px;
         }
 
         @media (max-width: $mmd){
             max-width: 90px;
+            max-height: 90px;
         }
 
     }
@@ -203,6 +207,10 @@
     &__icons-mob {
         display: flex;
         align-items: center;
+    }
+
+    &_move {
+        background: rgba(52, 62, 92, .95);
     }
 }
 

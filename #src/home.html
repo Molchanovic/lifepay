@@ -1,55 +1,664 @@
 <!DOCTYPE html>
 <html lang="ru">
-	@@include('_head.html', {
-		"title":"Главная",
-		"description":"Описание",
-		"img":"img/...png",
-		"custom-css":"one.css",
-		})
+    @@include('_head.html', { "title":"Главная", "description":"Описание",
+    "img":"img/...png", "custom-css":"one.css", })
 
+    <body>
+        <div class="wrapper" id="wrapper">
+            @@include('_header.html', {})
 
-<body>
-	<div class="wrapper" id="wrapper">
+            <main class="" id="homepage">
+                <section class="savepay">
+                    <div class="container savepay__row">
+                        <div class="savepay__block">
+                            <div class="savepay__wrapper">
+                                <h1 class="savepay__title">
+                                    Сэкономьте на приеме безналичных платежей
+                                </h1>
+                                <p class="savepay__subtitle">
+                                    Выгодные ставки по эквайрингу, одни из самых
+                                    низких на рынке
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
 
-
-		@@include('_header.html', {})
-
-		<main class="" id="homepage"> 
-			<section class="savepay">
-					<div class="bg-main_img bg-main">
-					</div>
-					<div class="container savepay__row">
-						<div class="savepay__block">
-							<div class="savepay__wrapper">
-								<h1 class="savepay__title">Сэкономьте на приеме безналичных платежей</h1>
-								<p class="savepay__subtitle">Выгодные ставки по эквайрингу, одни из самых низких на рынке</p>
+                <section class="acquiring">
+					<div class="container">
+						<div class="acquiring__top">
+							<div class="acquiring__info">
+								<h2 class="acquiring__title">
+									Интернет-эквайринг от 0,4%
+								</h2>
+								<p class="acquiring__subtitle">
+									Обеспечьте надежность приема платежей в любой ситуации за разумную цену
+								</p>
+								
+								<a href="##" class="acquiring__btn btn">
+									Получить подробную консультацию
+								</a>
 							</div>
-							
+	
+							<div class="acquiring__img bg-pc_img">
+
+							</div>
+
+							<div class="svg-arrows acquiring__arrows">
+								<svg class="icon icon-entrance">
+									<use xlink:href="/img/icons/sprite.svg#arrow"/>
+								</svg>
+
+								<svg class="icon icon-entrance">
+									<use xlink:href="/img/icons/sprite.svg#arrow"/>
+								</svg>
+
+								<svg class="icon icon-entrance">
+									<use xlink:href="/img/icons/sprite.svg#arrow"/>
+								</svg>
+
+								<svg class="icon icon-entrance">
+									<use xlink:href="/img/icons/sprite.svg#arrow"/>
+								</svg>
+
+								<svg class="icon icon-entrance">
+									<use xlink:href="/img/icons/sprite.svg#arrow"/>
+								</svg>
+
+								<svg class="icon icon-entrance">
+									<use xlink:href="/img/icons/sprite.svg#arrow"/>
+								</svg>
+
+								<svg class="icon icon-entrance">
+									<use xlink:href="/img/icons/sprite.svg#arrow"/>
+								</svg>
+
+								<svg class="icon icon-entrance">
+									<use xlink:href="/img/icons/sprite.svg#arrow"/>
+								</svg>
+
+								<svg class="icon icon-entrance">
+									<use xlink:href="/img/icons/sprite.svg#arrow"/>
+								</svg>
+
+							</div>
+						</div>
+						<div class="acquiring__or">
+							<h3 class="acquiring__or-title">
+								Выберите банка-эквайерас выгодной ставкой
+							</h3>
+							<span></span>
+							<h3 class="acquiring__or-title">
+								Принимайте оплаты на сайте по Системе быстрых
+								платежей
+							</h3>
+						</div>
+						<div class="acquiring__items">
+							<div class="acquiring__item">
+								<div class="acquiring__item-text">
+									Выгодные ставки по эквайрингу от 1,4% при
+									обороте менее 50 000 рублей в месяц
+								</div>
+	
+								<div class="svg-plus acquiring__plus">
+									<div class="svg-plus__wrapper">
+										<svg class="icon icon-entrance">
+											<use xlink:href="/img/icons/sprite.svg#plus"/>
+										</svg>
+			
+										<svg class="icon icon-entrance">
+											<use xlink:href="/img/icons/sprite.svg#plus"/>
+										</svg>
+									</div>
+									
+								</div>
+							</div>
+	
+							<div class="acquiring__item">
+								<div class="acquiring__item-text">
+									Прием платежей по QR-коду 0% на вашем сайте или
+									в вашем приложении
+								</div>
+	
+								<div class="svg-plus acquiring__plus">
+									<div class="svg-plus__wrapper">
+										<svg class="icon icon-entrance">
+											<use
+												xlink:href="/img/icons/sprite.svg#plus"
+											/>
+										</svg>
+	
+										<svg class="icon icon-entrance">
+											<use
+												xlink:href="/img/icons/sprite.svg#plus"
+											/>
+										</svg>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
-			</section>
-			<section class="connect">
-				<div class="connect__bg"></div>
-				<div class="connect__row">
-					<h2 class="connect__title"></h2>
-					<a href="##" class="btn connect__btn">Вав</a>
-				</div>
-			</section>
-		</main>
+                    
+                </section>
 
+                <section class="rates">
+                    <div class="container">
+                        <div class="rates__row">
+                            <div class="rates__block-title">
+                                <h2 class="rates__title">
+                                    Выгодные ставки по эквайрингу без привязки к
+                                    одному банку
+                                </h2>
+                                <a href="##" class="btn rates__btn"
+                                    >Оставить заявку
+                                </a>
 
-		@@include('_footer.html', {})
-		<!-- @//@include('_modal.html') -->
+                                <div class="svg-lines rates__lines_one">
+                                    <svg class="icon icon-entrance">
+                                        <use
+                                            xlink:href="/img/icons/sprite.svg#curve"
+                                        />
+                                    </svg>
+                                    <svg class="icon icon-entrance">
+                                        <use
+                                            xlink:href="/img/icons/sprite.svg#curve"
+                                        />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="rates__block-info">
+                                <p>
+                                    Обезопасьте ваш прием безналичных платежей и
+                                    сделайте его выгодным.
+                                </p>
+                                <p>
+                                    Мы поможем вам подключить эквайрингсо
+                                    ставками от 1,4% и 0,4% при обороте менее 50
+                                    000 рублей быстро и безболезненно для вашего
+                                    бизнеса
+                                </p>
 
-	</div>
+                                <div class="rates__numbers">
+                                    <span
+                                        >0,4
+                                        <svg class="icon icon-entrance">
+                                            <use
+                                                xlink:href="/img/icons/sprite.svg#procent"
+                                            />
+                                        </svg>
+                                    </span>
+                                    <span
+                                        >1,4
+                                        <svg class="icon icon-entrance">
+                                            <use
+                                                xlink:href="/img/icons/sprite.svg#procent"
+                                            />
+                                        </svg>
+                                    </span>
+                                </div>
+                            </div>
 
+                            <div class="svg-lines rates__lines_two">
+                                <svg class="icon icon-entrance">
+                                    <use
+                                        xlink:href="/img/icons/sprite.svg#curve"
+                                    />
+                                </svg>
+                                <svg class="icon icon-entrance">
+                                    <use
+                                        xlink:href="/img/icons/sprite.svg#curve"
+                                    />
+                                </svg>
+                            </div>
 
-	<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-	<script type="text/javascript" src="js/script.js"></script>
+                            <div class="svg-circls rates__circls">
+                                <svg class="icon icon-entrance">
+                                    <use
+                                        xlink:href="/img/icons/sprite.svg#mincircle"
+                                    />
+                                </svg>
 
+                                <svg class="icon icon-entrance">
+                                    <use
+                                        xlink:href="/img/icons/sprite.svg#mincircle"
+                                    />
+                                </svg>
 
+                                <svg class="icon icon-entrance">
+                                    <use
+                                        xlink:href="/img/icons/sprite.svg#mincircle"
+                                    />
+                                </svg>
 
+                                <svg class="icon icon-entrance">
+                                    <use
+                                        xlink:href="/img/icons/sprite.svg#mincircle"
+                                    />
+                                </svg>
 
-</body>
+                                <svg class="icon icon-entrance">
+                                    <use
+                                        xlink:href="/img/icons/sprite.svg#mincircle"
+                                    />
+                                </svg>
 
+                                <svg class="icon icon-entrance">
+                                    <use
+                                        xlink:href="/img/icons/sprite.svg#mincircle"
+                                    />
+                                </svg>
+
+                                <svg class="icon icon-entrance">
+                                    <use
+                                        xlink:href="/img/icons/sprite.svg#mincircle"
+                                    />
+                                </svg>
+
+                                <svg class="icon icon-entrance">
+                                    <use
+                                        xlink:href="/img/icons/sprite.svg#mincircle"
+                                    />
+                                </svg>
+
+                                <svg class="icon icon-entrance">
+                                    <use
+                                        xlink:href="/img/icons/sprite.svg#mincircle"
+                                    />
+                                </svg>
+
+                                <svg class="icon icon-entrance">
+                                    <use
+                                        xlink:href="/img/icons/sprite.svg#mincircle"
+                                    />
+                                </svg>
+
+                                <svg class="icon icon-entrance">
+                                    <use
+                                        xlink:href="/img/icons/sprite.svg#mincircle"
+                                    />
+                                </svg>
+
+                                <svg class="icon icon-entrance">
+                                    <use
+                                        xlink:href="/img/icons/sprite.svg#mincircle"
+                                    />
+                                </svg>
+
+                                <svg class="icon icon-entrance">
+                                    <use
+                                        xlink:href="/img/icons/sprite.svg#mincircle"
+                                    />
+                                </svg>
+
+                                <svg class="icon icon-entrance">
+                                    <use
+                                        xlink:href="/img/icons/sprite.svg#mincircle"
+                                    />
+                                </svg>
+
+                                <svg class="icon icon-entrance">
+                                    <use
+                                        xlink:href="/img/icons/sprite.svg#mincircle"
+                                    />
+                                </svg>
+
+                                <svg class="icon icon-entrance">
+                                    <use
+                                        xlink:href="/img/icons/sprite.svg#mincircle"
+                                    />
+                                </svg>
+
+                                <svg class="icon icon-entrance">
+                                    <use
+                                        xlink:href="/img/icons/sprite.svg#mincircle"
+                                    />
+                                </svg>
+
+                                <svg class="icon icon-entrance">
+                                    <use
+                                        xlink:href="/img/icons/sprite.svg#mincircle"
+                                    />
+                                </svg>
+
+                                <svg class="icon icon-entrance">
+                                    <use
+                                        xlink:href="/img/icons/sprite.svg#mincircle"
+                                    />
+                                </svg>
+
+                                <svg class="icon icon-entrance">
+                                    <use
+                                        xlink:href="/img/icons/sprite.svg#mincircle"
+                                    />
+                                </svg>
+
+                                <svg class="icon icon-entrance">
+                                    <use
+                                        xlink:href="/img/icons/sprite.svg#mincircle"
+                                    />
+                                </svg>
+
+                                <svg class="icon icon-entrance">
+                                    <use
+                                        xlink:href="/img/icons/sprite.svg#mincircle"
+                                    />
+                                </svg>
+
+                                <svg class="icon icon-entrance">
+                                    <use
+                                        xlink:href="/img/icons/sprite.svg#mincircle"
+                                    />
+                                </svg>
+
+                                <svg class="icon icon-entrance">
+                                    <use
+                                        xlink:href="/img/icons/sprite.svg#mincircle"
+                                    />
+                                </svg>
+
+                                <svg class="icon icon-entrance">
+                                    <use
+                                        xlink:href="/img/icons/sprite.svg#mincircle"
+                                    />
+                                </svg>
+
+                                <svg class="icon icon-entrance">
+                                    <use
+                                        xlink:href="/img/icons/sprite.svg#mincircle"
+                                    />
+                                </svg>
+
+                                <svg class="icon icon-entrance">
+                                    <use
+                                        xlink:href="/img/icons/sprite.svg#mincircle"
+                                    />
+                                </svg>
+
+                                <svg class="icon icon-entrance">
+                                    <use
+                                        xlink:href="/img/icons/sprite.svg#mincircle"
+                                    />
+                                </svg>
+
+                                <svg class="icon icon-entrance">
+                                    <use
+                                        xlink:href="/img/icons/sprite.svg#mincircle"
+                                    />
+                                </svg>
+
+                                <svg class="icon icon-entrance">
+                                    <use
+                                        xlink:href="/img/icons/sprite.svg#mincircle"
+                                    />
+                                </svg>
+
+                                <svg class="icon icon-entrance">
+                                    <use
+                                        xlink:href="/img/icons/sprite.svg#mincircle"
+                                    />
+                                </svg>
+
+                                <svg class="icon icon-entrance">
+                                    <use
+                                        xlink:href="/img/icons/sprite.svg#mincircle"
+                                    />
+                                </svg>
+
+                                <svg class="icon icon-entrance">
+                                    <use
+                                        xlink:href="/img/icons/sprite.svg#mincircle"
+                                    />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="connect">
+                    <div class="container connect__wrapper">
+                        <div class="connect__row">
+                            <h2 class="connect__title">
+                                Подключите интернет-эквайрингпо выгодным ставкам
+                                вместе с LIFE PAY
+                            </h2>
+                            <a href="##" class="btn connect__btn"
+                                >Оставить заявку</a
+                            >
+                        </div>
+
+                        <div class="connect__dots">
+                            <svg class="icon icon-entrance">
+                                <use
+                                    xlink:href="/img/icons/sprite.svg#mincircle"
+                                />
+                            </svg>
+
+                            <svg class="icon icon-entrance">
+                                <use
+                                    xlink:href="/img/icons/sprite.svg#mincircle"
+                                />
+                            </svg>
+
+                            <svg class="icon icon-entrance">
+                                <use
+                                    xlink:href="/img/icons/sprite.svg#mincircle"
+                                />
+                            </svg>
+
+                            <svg class="icon icon-entrance">
+                                <use
+                                    xlink:href="/img/icons/sprite.svg#mincircle"
+                                />
+                            </svg>
+
+                            <svg class="icon icon-entrance">
+                                <use
+                                    xlink:href="/img/icons/sprite.svg#mincircle"
+                                />
+                            </svg>
+
+                            <svg class="icon icon-entrance">
+                                <use
+                                    xlink:href="/img/icons/sprite.svg#mincircle"
+                                />
+                            </svg>
+
+                            <svg class="icon icon-entrance">
+                                <use
+                                    xlink:href="/img/icons/sprite.svg#mincircle"
+                                />
+                            </svg>
+
+                            <svg class="icon icon-entrance">
+                                <use
+                                    xlink:href="/img/icons/sprite.svg#mincircle"
+                                />
+                            </svg>
+
+                            <svg class="icon icon-entrance">
+                                <use
+                                    xlink:href="/img/icons/sprite.svg#mincircle"
+                                />
+                            </svg>
+
+                            <svg class="icon icon-entrance">
+                                <use
+                                    xlink:href="/img/icons/sprite.svg#mincircle"
+                                />
+                            </svg>
+
+                            <svg class="icon icon-entrance">
+                                <use
+                                    xlink:href="/img/icons/sprite.svg#mincircle"
+                                />
+                            </svg>
+
+                            <svg class="icon icon-entrance">
+                                <use
+                                    xlink:href="/img/icons/sprite.svg#mincircle"
+                                />
+                            </svg>
+
+                            <svg class="icon icon-entrance">
+                                <use
+                                    xlink:href="/img/icons/sprite.svg#mincircle"
+                                />
+                            </svg>
+
+                            <svg class="icon icon-entrance">
+                                <use
+                                    xlink:href="/img/icons/sprite.svg#mincircle"
+                                />
+                            </svg>
+
+                            <svg class="icon icon-entrance">
+                                <use
+                                    xlink:href="/img/icons/sprite.svg#mincircle"
+                                />
+                            </svg>
+
+                            <svg class="icon icon-entrance">
+                                <use
+                                    xlink:href="/img/icons/sprite.svg#mincircle"
+                                />
+                            </svg>
+
+                            <svg class="icon icon-entrance">
+                                <use
+                                    xlink:href="/img/icons/sprite.svg#mincircle"
+                                />
+                            </svg>
+
+                            <svg class="icon icon-entrance">
+                                <use
+                                    xlink:href="/img/icons/sprite.svg#mincircle"
+                                />
+                            </svg>
+
+                            <svg class="icon icon-entrance">
+                                <use
+                                    xlink:href="/img/icons/sprite.svg#mincircle"
+                                />
+                            </svg>
+
+                            <svg class="icon icon-entrance">
+                                <use
+                                    xlink:href="/img/icons/sprite.svg#mincircle"
+                                />
+                            </svg>
+
+                            <svg class="icon icon-entrance">
+                                <use
+                                    xlink:href="/img/icons/sprite.svg#mincircle"
+                                />
+                            </svg>
+
+                            <svg class="icon icon-entrance">
+                                <use
+                                    xlink:href="/img/icons/sprite.svg#mincircle"
+                                />
+                            </svg>
+
+                            <svg class="icon icon-entrance">
+                                <use
+                                    xlink:href="/img/icons/sprite.svg#mincircle"
+                                />
+                            </svg>
+
+                            <svg class="icon icon-entrance">
+                                <use
+                                    xlink:href="/img/icons/sprite.svg#mincircle"
+                                />
+                            </svg>
+
+                            <svg class="icon icon-entrance">
+                                <use
+                                    xlink:href="/img/icons/sprite.svg#mincircle"
+                                />
+                            </svg>
+
+                            <svg class="icon icon-entrance">
+                                <use
+                                    xlink:href="/img/icons/sprite.svg#mincircle"
+                                />
+                            </svg>
+
+                            <svg class="icon icon-entrance">
+                                <use
+                                    xlink:href="/img/icons/sprite.svg#mincircle"
+                                />
+                            </svg>
+
+                            <svg class="icon icon-entrance">
+                                <use
+                                    xlink:href="/img/icons/sprite.svg#mincircle"
+                                />
+                            </svg>
+
+                            <svg class="icon icon-entrance">
+                                <use
+                                    xlink:href="/img/icons/sprite.svg#mincircle"
+                                />
+                            </svg>
+
+                            <svg class="icon icon-entrance">
+                                <use
+                                    xlink:href="/img/icons/sprite.svg#mincircle"
+                                />
+                            </svg>
+
+                            <svg class="icon icon-entrance">
+                                <use
+                                    xlink:href="/img/icons/sprite.svg#mincircle"
+                                />
+                            </svg>
+
+                            <svg class="icon icon-entrance">
+                                <use
+                                    xlink:href="/img/icons/sprite.svg#mincircle"
+                                />
+                            </svg>
+
+                            <svg class="icon icon-entrance">
+                                <use
+                                    xlink:href="/img/icons/sprite.svg#mincircle"
+                                />
+                            </svg>
+                        </div>
+
+                        <div class="svg-lines connect__lines">
+                            <svg class="icon icon-entrance">
+                                <use xlink:href="/img/icons/sprite.svg#curve" />
+                            </svg>
+                            <svg class="icon icon-entrance">
+                                <use xlink:href="/img/icons/sprite.svg#curve" />
+                            </svg>
+                        </div>
+
+                        <div class="svg-plus connect__plus">
+                            <div class="svg-plus__wrapper">
+                                <svg class="icon icon-entrance">
+                                    <use
+                                        xlink:href="/img/icons/sprite.svg#plus"
+                                    />
+                                </svg>
+
+                                <svg class="icon icon-entrance">
+                                    <use
+                                        xlink:href="/img/icons/sprite.svg#plus"
+                                    />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+
+            @@include('_footer.html', {})
+            <!-- @//@include('_modal.html') -->
+        </div>
+
+        <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+        <script type="text/javascript" src="js/script.js"></script>
+    </body>
 </html>

@@ -44,29 +44,21 @@
 
 
 // ==================================
-.bg-main {
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	z-index: -1;
-}
 .savepay {
-	width: 100%;
-	position: relative;
-	// max-height: 490px;
-	// background: rgba(164, 168, 255, 0.4);
-	// // min-height: 480px;
-	// // background-color: rgba(164, 168, 255, 0.4),  linear-gradient(180deg, rgba(48, 56, 76, 0.7) 0%, rgba(48, 56, 76, 0) 100%),radial-gradient(50% 50% at 50% 50%, #A4A8FF 0%, rgba(164, 168, 255, 0) 100%);
-	// // background-image: url(../img/gallery/girl-main.png);
+	background: url(../img/gallery/main-img.jpg) no-repeat;
+	background-size: cover;
+	background-position: 10% 100%;
+
 	
 	&__row {
-		padding-top: 250px;
-		padding-bottom: 30px;
+		min-height: 490px;
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
 	}
 
 	&__block {
+		margin-top: 100px;
 		display: flex;
 		justify-content: flex-end;
 	}
@@ -87,8 +79,309 @@
 }
 
 // ==================================
+.connect {
+	padding: 70px 0px 90px 0px ;
+	background: url(../img/gallery/connect-img.jpg) no-repeat;
+	background-size: cover;
+	background-position: 60% 100%;
+
+	@media (max-width: $mxl){
+		
+	}
+
+	&__row {
+	}
+
+	&__title {
+		max-width: 700px;
+		margin-bottom: 30px;
+	}
+
+	&__btn {
+	}
+
+	&__dots {
+		max-width: 45px;
+		display: flex;
+		flex-wrap: wrap;
+		position: absolute;
+		top: -30px;
+		right: 0;
+		svg {
+			width: 11px;
+			height: 11px;
+			fill: rgba(255, 255, 255, 0.4);
+			margin-right: 5px;
+			margin-bottom: 5px;
+
+			&:nth-child(3n) {
+				margin-right: 0;
+			}
+		}
+	}
+
+	&__wrapper {
+		position: relative;
+	}
+
+	&__lines {
+		position: absolute;
+		top: -20px;
+		right: 30%;
+
+		svg {
+			fill: $color-red;
+		}
+
+		@media (max-width: $mlg){
+			display: none;
+		}
+	}
+
+	&__plus {
+		position: absolute;
+		top: -115px;
+		right: 20%;
+	}
+}
+
+.svg-plus {
+
+	&__wrapper {
+		position: relative;
+
+		svg {
+			fill: $color-red;
+			width: 28px;
+			height: 28px;
+
+			&:last-child {
+				width: 49px;
+				height: 49px;
+				position: absolute;
+				top: 20px;
+				left: 20px;
+			}
+		}
+	}
+}
+
+.svg-lines {
+	svg {
+		display: block;
+		width: 130px;
+
+		&:last-child {
+			position: relative;
+			top: -5px;
+		}
+	}
+}
 // ==================================
+.rates {
+	padding: 65px;
+	background: url(../img/gallery/rates-img.jpg) no-repeat;
+	background-size: cover;
+	background-position: 60% 100%;
+
+	&__row {
+		display: flex;
+		color: #fff;
+		position: relative;
+	}
+
+	&__block-title {
+		position: relative;
+	}
+
+	&__title {
+		margin-bottom: 35px;
+		max-width: 330px;
+	}
+
+	&__btn {
+		z-index: 2;
+	}
+
+	&__lines {
+
+		&_one {
+			position: absolute;
+			bottom: 10px;
+			right: 10px;
+			z-index: 1;
+			svg {
+				fill: #fff;
+			}
+			
+		}
+
+		&_two {
+			position: absolute;
+			top: 75px;
+			right: 90px;
+			svg {
+				fill: $color-red;
+			}
+		}
+	}
+
+	&__block-info {
+		max-width: 380px;
+		margin-left: 90px;
+		p {
+			margin-bottom: 30px;
+		}
+	}
+
+	&__numbers {
+		span {
+			position: relative;
+			font-weight: 700;
+			$fs: 93;
+			font-size: calc($fs / $f-size) + em;
+			line-height: calc(93 / $fs * 100%);
+			letter-spacing: -0.02em;
+			background:linear-gradient(360deg, #7D81C5 0%, rgba(123, 126, 198, 0) 75.76%), #FFFFFF;
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			color: #fff;
+			margin-right: 50px;
+
+			&:last-child {
+				margin-right: 0;
+
+				&::before {
+					content: 'и';
+				}
+				svg {
+					right: -35px;
+				}
+			}
+
+			svg {
+				width: 42px;
+				height: 34px;
+				fill: #fff;
+				position: absolute;
+				bottom: 20px;
+				right: -15px;
+			}
+
+			&::before {
+				position: absolute;
+				color: #fff;
+				-webkit-text-fill-color:#fff;
+				bottom: 20px;
+				left: -25px;
+				font-weight: 500;
+				$fs: 3;
+				font-size: calc($fs / $f-size) + em;
+				line-height: calc(3 / $fs * 100%);
+				content: 'От';
+			}
+		}
+	}
+
+	&__circls {
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+}
+
+.svg-circls {
+	max-width: 220px;
+	svg { 
+		width: 11px;
+		height: 11px;
+		margin-right: 5px;
+		margin-bottom: 5px;
+		fill: rgba(255, 255, 255, 0.42);
+
+	}
+}
+
+
 // ==================================
+.acquiring {
+	background: $color-bg;
+	padding: 55px 0px 70px 0px;
+
+	&__top {
+		display: flex;
+		justify-content: space-between;
+		position: relative;
+		align-items: center;
+	}
+
+	&__info {
+		$grid: 45;
+		flex: 0 0 0% + $grid;
+		max-width: 0% + $grid;
+	}
+
+	&__title {
+		color: $color-blue;
+		margin-bottom: 15px;
+	}
+
+	&__subtitle {
+		$fs: 20;
+		font-size: calc($fs / $f-size) + em;
+		line-height: calc(28 / $fs * 100%);
+		margin-bottom: 25px;
+		max-width: 440px;
+	}
+
+	&__btn {
+	}
+
+	&__img {
+	}
+
+	&__or {
+	}
+
+	&__or-title {
+		color: $color-blue;
+	}
+
+	&__items {
+	}
+
+	&__item {
+	}
+
+	&__item-text {
+	}
+
+	&__plus {
+	}
+
+	&__arrows {
+		position: absolute;
+		bottom: 45px;
+		right: -20px;
+
+		svg {
+			fill: $color-red;
+		}
+	}
+}
+
+.svg-arrows {
+	svg {
+		width: 16px;
+		height: 23px;
+		margin-right: 15px;
+
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+}
+
 // ==================================
 // ==================================
 // ==================================
