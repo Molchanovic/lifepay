@@ -1,6 +1,10 @@
 .header {
-    background: #000;
     z-index: 2000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
 
     &__blocks {
         position: relative;
@@ -150,7 +154,10 @@
 
     &__wrapper {
         width: 100%;
-        margin-left: 40px;
+        @media (max-width: $mxxl){
+            margin-left: 40px;
+        }
+     
         
 
         @media (max-width: $mmd){
@@ -162,11 +169,7 @@
 
     &_active {
         background: $color-dark-blue;
-        position: fixed;
-        top: 0;
-        left: 0;
         bottom: 0;
-        right: 0;
 
         .header__wrapper {
             display: block;

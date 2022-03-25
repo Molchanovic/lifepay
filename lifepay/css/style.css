@@ -97,6 +97,19 @@ i {
   height: 1em;
 }
 
+.bg-pc_img {
+  width: 488px;
+  height: 291px;
+  background: url("../img/icon/css_sprites.png") -10px -992px no-repeat;
+}
+
+.bg-main_img {
+  width: 3840px;
+  height: 962px;
+  background: url("../img/icon/css_sprites.png") -10px -10px;
+  zoom: 50%;
+}
+
 html,
 body {
   padding: 0;
@@ -259,7 +272,6 @@ html {
 }
 
 main {
-  padding: 60px 0px 0px 0px;
   -webkit-box-flex: 1;
       -ms-flex: 1 1;
           flex: 1 1;
@@ -289,6 +301,8 @@ h5 {
 
 h1 {
   font-weight: 700;
+  font-size: 2.25em;
+  line-height: 119.4444444444%;
 }
 
 h2 {
@@ -297,6 +311,27 @@ h2 {
 
 h3 {
   font-weight: 500;
+}
+
+.btn {
+  display: inline-block;
+  font-family: Montserrat, normal;
+  font-size: 1em;
+  line-height: 125%;
+  color: #fff;
+  font-weight: 500;
+  padding: 15px 54px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #FE5339;
+  -webkit-box-shadow: 0px 2px 10px rgba(58, 64, 91, 0.25);
+          box-shadow: 0px 2px 10px rgba(58, 64, 91, 0.25);
+  border-radius: 5px;
+}
+
+.btn:hover {
+  color: #F1F2F9;
 }
 
 .menu {
@@ -514,8 +549,11 @@ h3 {
 }
 
 .header {
-  background: #000;
   z-index: 2000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
 .header__blocks {
@@ -606,16 +644,11 @@ h3 {
 
 .header__wrapper {
   width: 100%;
-  margin-left: 40px;
 }
 
 .header_active {
   background: #343E5C;
-  position: fixed;
-  top: 0;
-  left: 0;
   bottom: 0;
-  right: 0;
 }
 
 .header_active .header__wrapper {
@@ -709,6 +742,48 @@ h3 {
           transform: rotate(45deg);
 }
 
+.bg-main {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.savepay {
+  width: 100%;
+  position: relative;
+}
+
+.savepay__row {
+  padding-top: 250px;
+  padding-bottom: 30px;
+}
+
+.savepay__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.savepay__wrapper {
+  max-width: 480px;
+  color: #fff;
+  padding: 20px 30px;
+}
+
+.savepay__title {
+  margin-bottom: 5px;
+}
+
+.savepay__subtitle {
+  max-width: 420px;
+}
+
 @media (min-width: 576px) {
   .container-fluid {
     width: 100%;
@@ -774,6 +849,10 @@ h3 {
   .header__logo {
     position: static;
     max-width: 120px;
+  }
+
+  .header__wrapper {
+    margin-left: 40px;
   }
 }
 
@@ -896,10 +975,6 @@ h3 {
 @media (max-width: 767px) {
   .container-fluid {
     max-width: 540px;
-  }
-
-  section {
-    margin-top: 50px;
   }
 
   .footer__item {

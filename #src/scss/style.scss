@@ -44,6 +44,47 @@
 
 
 // ==================================
+.bg-main {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: -1;
+}
+.savepay {
+	width: 100%;
+	position: relative;
+	// max-height: 490px;
+	// background: rgba(164, 168, 255, 0.4);
+	// // min-height: 480px;
+	// // background-color: rgba(164, 168, 255, 0.4),  linear-gradient(180deg, rgba(48, 56, 76, 0.7) 0%, rgba(48, 56, 76, 0) 100%),radial-gradient(50% 50% at 50% 50%, #A4A8FF 0%, rgba(164, 168, 255, 0) 100%);
+	// // background-image: url(../img/gallery/girl-main.png);
+	
+	&__row {
+		padding-top: 250px;
+		padding-bottom: 30px;
+	}
+
+	&__block {
+		display: flex;
+		justify-content: flex-end;
+	}
+
+	&__wrapper {
+		max-width: 480px;
+		color: #fff;
+		padding: 20px 30px;
+	}
+
+	&__title {
+		margin-bottom: 5px;
+	}
+
+	&__subtitle {
+		max-width: 420px;
+	}
+}
 
 // ==================================
 // ==================================
