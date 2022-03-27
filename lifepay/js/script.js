@@ -5,11 +5,11 @@ if (document.querySelector('.menu-burger')) {
 		// let burger = document.querySelector('.header__burger');
 		let header = document.querySelector('.header');
 		let burger = document.querySelector('.menu-burger');
-		// let body = document.querySelector('.body');
+		let body = document.querySelector('.body');
 		burger.addEventListener('click', () => {
 			// burger.classList.toggle('header__burger_active');
 			header.classList.toggle('header_active');
-			// body.classList.toggle('overflow-h');
+			body.classList.toggle('overflow-h');
 			burger.classList.toggle('menu-burger_active');
 		})
 	}());
@@ -23,7 +23,6 @@ if (document.querySelector('.header')) {
 	window.addEventListener('scroll', function () {
 		if (window.scrollY > 50) {
 			headerMove.classList.add('header_move');
-			console.log ('sdksdfn');
 		}
 		
 	

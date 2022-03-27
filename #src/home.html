@@ -3,7 +3,7 @@
     @@include('_head.html', { "title":"Главная", "description":"Описание",
     "img":"img/...png", "custom-css":"one.css", })
 
-    <body>
+    <body class="body">
         <div class="wrapper" id="wrapper">
             @@include('_header.html', {})
 
@@ -25,7 +25,7 @@
                 </section>
 
                 <section class="acquiring">
-					<div class="container">
+					<div class="container acquiring__content">
 						<div class="acquiring__top">
 							<div class="acquiring__info">
 								<h2 class="acquiring__title">
@@ -41,102 +41,108 @@
 							</div>
 	
 							<div class="acquiring__img bg-pc_img">
-
+                                <div class="svg-arrows acquiring__arrows">
+                                    <svg class="icon icon-entrance">
+                                        <use xlink:href="/img/icons/sprite.svg#arrow"/>
+                                    </svg>
+    
+                                    <svg class="icon icon-entrance">
+                                        <use xlink:href="/img/icons/sprite.svg#arrow"/>
+                                    </svg>
+    
+                                    <svg class="icon icon-entrance">
+                                        <use xlink:href="/img/icons/sprite.svg#arrow"/>
+                                    </svg>
+    
+                                    <svg class="icon icon-entrance">
+                                        <use xlink:href="/img/icons/sprite.svg#arrow"/>
+                                    </svg>
+    
+                                    <svg class="icon icon-entrance">
+                                        <use xlink:href="/img/icons/sprite.svg#arrow"/>
+                                    </svg>
+    
+                                    <svg class="icon icon-entrance">
+                                        <use xlink:href="/img/icons/sprite.svg#arrow"/>
+                                    </svg>
+    
+                                    <svg class="icon icon-entrance">
+                                        <use xlink:href="/img/icons/sprite.svg#arrow"/>
+                                    </svg>
+    
+                                    <svg class="icon icon-entrance">
+                                        <use xlink:href="/img/icons/sprite.svg#arrow"/>
+                                    </svg>
+    
+                                    <svg class="icon icon-entrance">
+                                        <use xlink:href="/img/icons/sprite.svg#arrow"/>
+                                    </svg>
+    
+                                </div>
 							</div>
 
-							<div class="svg-arrows acquiring__arrows">
-								<svg class="icon icon-entrance">
-									<use xlink:href="/img/icons/sprite.svg#arrow"/>
-								</svg>
-
-								<svg class="icon icon-entrance">
-									<use xlink:href="/img/icons/sprite.svg#arrow"/>
-								</svg>
-
-								<svg class="icon icon-entrance">
-									<use xlink:href="/img/icons/sprite.svg#arrow"/>
-								</svg>
-
-								<svg class="icon icon-entrance">
-									<use xlink:href="/img/icons/sprite.svg#arrow"/>
-								</svg>
-
-								<svg class="icon icon-entrance">
-									<use xlink:href="/img/icons/sprite.svg#arrow"/>
-								</svg>
-
-								<svg class="icon icon-entrance">
-									<use xlink:href="/img/icons/sprite.svg#arrow"/>
-								</svg>
-
-								<svg class="icon icon-entrance">
-									<use xlink:href="/img/icons/sprite.svg#arrow"/>
-								</svg>
-
-								<svg class="icon icon-entrance">
-									<use xlink:href="/img/icons/sprite.svg#arrow"/>
-								</svg>
-
-								<svg class="icon icon-entrance">
-									<use xlink:href="/img/icons/sprite.svg#arrow"/>
-								</svg>
-
-							</div>
+							
 						</div>
-						<div class="acquiring__or">
-							<h3 class="acquiring__or-title">
-								Выберите банка-эквайерас выгодной ставкой
-							</h3>
-							<span></span>
-							<h3 class="acquiring__or-title">
-								Принимайте оплаты на сайте по Системе быстрых
-								платежей
-							</h3>
-						</div>
-						<div class="acquiring__items">
-							<div class="acquiring__item">
-								<div class="acquiring__item-text">
-									Выгодные ставки по эквайрингу от 1,4% при
-									обороте менее 50 000 рублей в месяц
-								</div>
-	
-								<div class="svg-plus acquiring__plus">
-									<div class="svg-plus__wrapper">
-										<svg class="icon icon-entrance">
-											<use xlink:href="/img/icons/sprite.svg#plus"/>
-										</svg>
-			
-										<svg class="icon icon-entrance">
-											<use xlink:href="/img/icons/sprite.svg#plus"/>
-										</svg>
-									</div>
-									
-								</div>
-							</div>
-	
-							<div class="acquiring__item">
-								<div class="acquiring__item-text">
-									Прием платежей по QR-коду 0% на вашем сайте или
-									в вашем приложении
-								</div>
-	
-								<div class="svg-plus acquiring__plus">
-									<div class="svg-plus__wrapper">
-										<svg class="icon icon-entrance">
-											<use
-												xlink:href="/img/icons/sprite.svg#plus"
-											/>
-										</svg>
-	
-										<svg class="icon icon-entrance">
-											<use
-												xlink:href="/img/icons/sprite.svg#plus"
-											/>
-										</svg>
-									</div>
-								</div>
-							</div>
-						</div>
+                            
+                        <div class="acquiring__items">
+                            <div class="acquiring__items-block">
+                                <h3 class="acquiring__or-title">
+                                    Выберите банка-эквайера <br> с выгодной ставкой
+                                </h3>
+                                <div class="acquiring__item">
+                                    <div class="acquiring__item-text">
+                                        Выгодные ставки по эквайрингу от 1,4% при
+                                        обороте менее 50 000 рублей в месяц
+                                    </div>
+        
+                                    <div class="svg-plus acquiring__plus">
+                                        <div class="svg-plus__wrapper">
+                                            <svg class="icon icon-entrance">
+                                                <use xlink:href="/img/icons/sprite.svg#plus"/>
+                                            </svg>
+                
+                                            <svg class="icon icon-entrance">
+                                                <use xlink:href="/img/icons/sprite.svg#plus"/>
+                                            </svg>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+
+                            <span class="acquiring__or">Или</span>
+
+                            <div class="acquiring__items-block">
+                                <h3 class="acquiring__or-title">
+                                    Принимайте оплаты на сайте <br> по Системе быстрых
+                                    платежей
+                                </h3>
+                                <div class="acquiring__item">
+                                    <div class="acquiring__item-text">
+                                        Прием платежей по QR-коду 0% на вашем сайте или
+                                        в вашем приложении
+                                    </div>
+        
+                                    <div class="svg-plus acquiring__plus">
+                                        <div class="svg-plus__wrapper">
+                                            <svg class="icon icon-entrance">
+                                                <use
+                                                    xlink:href="/img/icons/sprite.svg#plus"
+                                                />
+                                            </svg>
+        
+                                            <svg class="icon icon-entrance">
+                                                <use
+                                                    xlink:href="/img/icons/sprite.svg#plus"
+                                                />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="acquiring__line-block"></div>
 					</div>
                     
                 </section>
@@ -151,20 +157,20 @@
                                 </h2>
                                 <a href="##" class="btn rates__btn"
                                     >Оставить заявку
-                                </a>
 
-                                <div class="svg-lines rates__lines_one">
-                                    <svg class="icon icon-entrance">
-                                        <use
-                                            xlink:href="/img/icons/sprite.svg#curve"
-                                        />
-                                    </svg>
-                                    <svg class="icon icon-entrance">
-                                        <use
-                                            xlink:href="/img/icons/sprite.svg#curve"
-                                        />
-                                    </svg>
-                                </div>
+                                    <div class="svg-lines rates__lines_one">
+                                        <svg class="icon icon-entrance">
+                                            <use
+                                                xlink:href="/img/icons/sprite.svg#curve"
+                                            />
+                                        </svg>
+                                        <svg class="icon icon-entrance">
+                                            <use
+                                                xlink:href="/img/icons/sprite.svg#curve"
+                                            />
+                                        </svg>
+                                    </div>
+                                </a>
                             </div>
                             <div class="rates__block-info">
                                 <p>
@@ -412,6 +418,61 @@
                             </div>
                         </div>
                     </div>
+                </section>
+
+                <section class="reception">
+                    <div class="container">
+                        <div class="reception__row">
+                            <div class="reception__img-wrapper">
+                                <div class="reception__img bg-reception_img"></div>
+                            </div>
+                           
+                            <div class="reception__content">
+                                <h2 class="reception__title">Прием платежей по QR-коду со ставками 0%</h2>
+                                <p class="reception__text">Подключите систему быстрых платежей и принимайте оплату через QR-код или ссылку. Система быстрых платежей гораздо дешевле эквайринга (ставки 0%), она обеспечивает моментальное зачисление на расчетный счет и бесперебойную работу, потому что поддерживается Банком России</p>
+                                <div class="reception__btn btn">Оставить заявку</div>
+                                <div class="svg-arrows reception__arrows">
+                                    <svg class="icon icon-entrance">
+                                        <use xlink:href="/img/icons/sprite.svg#arrow"/>
+                                    </svg>
+        
+                                    <svg class="icon icon-entrance">
+                                        <use xlink:href="/img/icons/sprite.svg#arrow"/>
+                                    </svg>
+        
+                                    <svg class="icon icon-entrance">
+                                        <use xlink:href="/img/icons/sprite.svg#arrow"/>
+                                    </svg>
+        
+                                    <svg class="icon icon-entrance">
+                                        <use xlink:href="/img/icons/sprite.svg#arrow"/>
+                                    </svg>
+        
+                                    <svg class="icon icon-entrance">
+                                        <use xlink:href="/img/icons/sprite.svg#arrow"/>
+                                    </svg>
+        
+                                    <svg class="icon icon-entrance">
+                                        <use xlink:href="/img/icons/sprite.svg#arrow"/>
+                                    </svg>
+        
+                                    <svg class="icon icon-entrance">
+                                        <use xlink:href="/img/icons/sprite.svg#arrow"/>
+                                    </svg>
+        
+                                    <svg class="icon icon-entrance">
+                                        <use xlink:href="/img/icons/sprite.svg#arrow"/>
+                                    </svg>
+        
+                                    <svg class="icon icon-entrance">
+                                        <use xlink:href="/img/icons/sprite.svg#arrow"/>
+                                    </svg>
+        
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
                 </section>
 
                 <section class="connect">
