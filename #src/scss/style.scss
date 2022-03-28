@@ -303,13 +303,14 @@
 			-webkit-background-clip: text;
 			-webkit-text-fill-color: transparent;
 			color: #fff;
-			margin-right: 50px;
+			margin-right: 60px;
 
 			&:last-child {
 				margin-right: 0;
 
 				&::before {
-					content: 'и';
+					content: 'или';
+					left: -34px;
 				}
 				svg {
 					right: -35px;
@@ -410,6 +411,10 @@
 	}
 
 	&__items-block {
+
+		$grid: 49;
+		flex: 0 0 0% + $grid;
+		max-width: 0% + $grid;
 		&:first-child {
 			margin-right: 20px;
 			.acquiring__or-title {
@@ -446,6 +451,10 @@
 			.acquiring__or-title {
 				margin-left: 80px;
 
+				// @media (max-width: $mxl){
+				// 	margin-left: 60px;
+				// }
+
 				@media (max-width: $mlg){
 					margin-left: 0;
 				}
@@ -468,6 +477,9 @@
 		}
 
 		@media (max-width: $mlg){
+			$grid: 100;
+			flex: 0 0 0% + $grid;
+			max-width: 0% + $grid;
 			margin: 0px 0px 0px 0px;
 		}
 	}
@@ -511,10 +523,10 @@
 		box-sizing: border-box;
 		position: absolute;
 		top: -60px;
-		left: 46.5%;
+		left: 44.5%;
 
 		@media (max-width: $mxxl){
-			left: 46%;
+			left: 44%;
 		}
 
 		@media (max-width: $mlg){
