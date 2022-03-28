@@ -932,6 +932,10 @@ h3 {
   max-width: 330px;
 }
 
+.rates__wrapper {
+  position: relative;
+}
+
 .rates__btn {
   z-index: 8;
   position: relative;
@@ -939,8 +943,8 @@ h3 {
 
 .rates__lines_one {
   position: absolute;
-  bottom: 10px;
-  right: -60px;
+  bottom: 5px;
+  right: 20px;
   z-index: 4;
 }
 
@@ -1443,10 +1447,6 @@ h3 {
     max-width: 13%;
   }
 
-  .rates__lines_one {
-    display: none;
-  }
-
   .rates__lines_two {
     display: none;
   }
@@ -1592,6 +1592,10 @@ h3 {
 
   .rates__title {
     max-width: unset;
+  }
+
+  .rates__lines_one {
+    display: none;
   }
 
   .rates__block-info {
